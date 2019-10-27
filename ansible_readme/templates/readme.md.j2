@@ -1,0 +1,89 @@
+# {{ extras.role_name }}
+
+## Table Of Contents
+
+{% if meta.galaxy_info.description %}
+* [About](#about)
+{% endif %}
+{% if docs.requirements %}
+* [Requirements](#requirements)
+{% endif %}
+{% if docs.defaults %}
+* [Role Defaults](#role-defaults)
+{% endif %}
+{% if meta.galaxy_info.dependencies %}
+* [Dependencies](#dependencies)
+{% endif %}
+{% if docs.examples %}
+* [Example Playbooks](#examples-playbooks)
+{% endif %}
+{% if meta.galaxy_info.license %}
+* [License](#license)
+{% endif %}
+{% if meta.galaxy_info.author %}
+* [Author](#author)
+{% endif %}
+
+{% if meta.galaxy_info %}
+{% if meta.galaxy_info.description %}
+## About
+
+> {{ meta.galaxy_info.description 
+     | replace('\n', ' ') 
+     | trim 
+     | wordwrap(wrapstring='\n> ') }}
+{% endif %}
+{% endif %}
+{% if docs.requirements %}
+## Requirements
+
+{{ docs.requirements }} 
+{% endif %}
+
+{% if docs.defaults %}
+## Role Defaults
+
+**Quicklist**: {{ docs.defaults | quicklistify | wordwrap }}
+
+{% for default in docs.defaults %}
+### {{ default }} 
+
+{% if default in docs.defaults and docs.defaults[default].help %}
+* *help*: {{ docs.defaults[default].help | replace('\n', ' ') | trim }}
+{% endif %}
+{% if default in defaults and defaults[default] %}
+* *default*: {{ defaults[default] | listify }}
+{% endif %}
+
+[Back to the top](#role-defaults)
+
+{% endfor %}
+{% endif %}
+{% if meta.galaxy_info.dependencies %}
+## Dependencies
+
+{{ meta.galaxy_info.dependencies }}
+{% endif %}
+{% if docs.examples %}
+## Example Playbooks
+
+{% for example in docs.examples %}
+### {{ example }}
+
+```yaml
+{{ docs.examples[example] | trim }}
+```
+
+{% endfor %}
+{% endif %}
+{% if meta.galaxy_info.license %}
+## License
+
+{{ meta.galaxy_info.license }}
+{% endif %}
+
+{% if meta.galaxy_info.author %}
+## Author
+
+{{ meta.galaxy_info.author }}
+{% endif %}
