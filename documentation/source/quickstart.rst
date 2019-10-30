@@ -3,7 +3,8 @@ Quickstart
 **********
 
 To see what kind of output Ansible-Readme can generate, the quickest way to get
-started is to run it one of your roles or some popular role out in the wild:
+started is to run it against one of your roles or some popular role out in the
+wild:
 
 .. code-block:: bash
 
