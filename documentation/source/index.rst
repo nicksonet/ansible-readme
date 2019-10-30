@@ -17,6 +17,16 @@ Usage
    :maxdepth: 1
 
    Quickstart <quickstart>
+   The docs/ role directory <docsdir>
+
+Approaches
+==========
+
+.. toctree::
+   :maxdepth: 1
+
+   Approaches to documenting roles <approaches>
+   Tooling for documenting roles <tooling>
 
 Contributing
 ============
