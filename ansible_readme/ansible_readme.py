@@ -61,7 +61,7 @@ class AnsibleReadme:
     # Jinaj2 template to use for README generation
     template: pathlib.Path = attr.ib(
         default=pathlib.Path(__file__).parent.absolute()
-        / 'templates'
+        / 'data'
         / 'readme.md.j2'
     )
 

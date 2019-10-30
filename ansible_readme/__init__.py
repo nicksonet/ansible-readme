@@ -79,7 +79,7 @@ def init(ctx, roles_path, force):
     default=(
         str(
             pathlib.Path(__file__).parent.absolute()
-            / 'templates'
+            / 'data'
             / 'readme.md.j2'
         )
     ),
