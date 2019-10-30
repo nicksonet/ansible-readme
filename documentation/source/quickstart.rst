@@ -19,9 +19,12 @@ Then you can quickly preview that generated README with something like:
     $ pip install grip
     $ grip
 
-Alternatively, see the `Github hosted version of the README file`_.
+Alternatively, see the `Github hosted version of the generated README file`_.
+It is also worth to take notice of the new `generated docs/ directory`_ as well
+(please note, the "examples" stanza has been manually copied over).
 
-.. _`Github hosted version of the README file`: https://github.com/decentral1se/ansible-role-mysql/blob/ansible-readme-generated-readme/README.md
+.. _`Github hosted version of the generated README file`: https://github.com/decentral1se/ansible-role-mysql/blob/ansible-readme-generated-readme/README.md
+.. _generated docs/ directory: https://github.com/decentral1se/ansible-role-mysql/blob/ansible-readme-generated-readme/docs/main.yml
 
 Ansible-Readme uses an internally managed `Jinja2`_ template file formatted as
 a Markdown document which it populates with information that is
