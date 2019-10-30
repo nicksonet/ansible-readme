@@ -1,3 +1,23 @@
+Ansible_Readme 1.0.5 (2019-10-30)
+=================================
+
+Features
+--------
+
+- "Back to the top" becomes now "Back to table of contents" in the Markdown template. (#10)
+- Add "Back to table of contents" to more sections for easier navigation. (#11)
+
+Bug Fixes
+---------
+
+- Fix "#example-playbook" TOC link typo. (#9)
+
+Improved Documentation
+----------------------
+
+- Add approaches sectiont to documentation. (#7)
+- Add link to generate README file from Ansible-Readme. (#8)
+
 Ansible_Readme 1.0.4 (2019-10-30)
 =================================
 
