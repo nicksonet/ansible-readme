@@ -9,7 +9,7 @@ Bug Fixes
 Trivial/Internal Changes
 ------------------------
 
-- Fix ``towncrier`` integration to detect the project.
+- Fix ``towncrier`` integration to detect the project. (#2)
 
 
 Ansible_Readme 1.0.0 (2019-10-30)
