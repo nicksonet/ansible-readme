@@ -47,7 +47,7 @@ def __main__(ctx, debug):
 
 @__main__.command(context_settings=CONTEXT_SETTINGS)
 @click.argument(
-    'roles-path', type=click.Path(exists=True), default=pathlib.Path('.')
+    'roles-path', type=click.Path(exists=True), default=str(pathlib.Path('.'))
 )
 @click.pass_context
 @click.option(
@@ -64,7 +64,7 @@ def init(ctx, roles_path, force):
 
 @__main__.command(context_settings=CONTEXT_SETTINGS)
 @click.argument(
-    'roles-path', type=click.Path(exists=True), default=pathlib.Path('.')
+    'roles-path', type=click.Path(exists=True), default=str(pathlib.Path('.'))
 )
 @click.option(
     '--force/--no-force',
@@ -77,7 +77,11 @@ def init(ctx, roles_path, force):
     '--template',
     help='Jinja2 template for the README file.',
     default=(
-        pathlib.Path(__file__).parent.absolute() / 'templates' / 'readme.md.j2'
+        str(
+            pathlib.Path(__file__).parent.absolute()
+            / 'templates'
+            / 'readme.md.j2'
+        )
     ),
     type=click.Path(exists=True),
     show_default=True,
