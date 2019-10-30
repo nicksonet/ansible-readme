@@ -12,8 +12,8 @@ ansible-readme
    :target: https://badge.fury.io/py/ansible-readme
    :alt: PyPI package
 
-.. image:: https://travis-ci.com/datpy/ansible-readme.svg?branch=master
-   :target: https://travis-ci.com/datpy/flat-tree
+.. image:: https://travis-ci.com/pycontribs/ansible-readme.svg?branch=master
+   :target: https://travis-ci.com/pycontribs/ansible-readme
    :alt: Travis CI result
 
 .. image:: https://readthedocs.org/projects/ansible-readme/badge/?version=latest
