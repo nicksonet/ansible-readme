@@ -33,13 +33,18 @@
      | trim 
      | wordwrap(wrapstring='\n> ') }}
 {% endif %}
+
+[Back to table of contents](#table-of-contents)
+
 {% endif %}
 {% if docs.requirements %}
 ## Requirements
 
 {{ docs.requirements }} 
-{% endif %}
 
+[Back to table of contents](#table-of-contents)
+
+{% endif %}
 {% if docs.defaults %}
 ## Role Defaults
 
@@ -55,7 +60,7 @@
 * *default*: {{ defaults[default] | listify }}
 {% endif %}
 
-[Back to the top](#role-defaults)
+[Back to table of contents](#table-of-contents)
 
 {% endfor %}
 {% endif %}
@@ -63,6 +68,9 @@
 ## Dependencies
 
 {{ meta.galaxy_info.dependencies }}
+
+[Back to table of contents](#table-of-contents)
+
 {% endif %}
 {% if docs.examples %}
 ## Example Playbooks
@@ -75,15 +83,22 @@
 ```
 
 {% endfor %}
+
+[Back to table of contents](#table-of-contents)
+
 {% endif %}
 {% if meta.galaxy_info.license %}
 ## License
 
 {{ meta.galaxy_info.license }}
-{% endif %}
 
+[Back to table of contents](#table-of-contents)
+
+{% endif %}
 {% if meta.galaxy_info.author %}
 ## Author
 
 {{ meta.galaxy_info.author }}
+
+[Back to table of contents](#table-of-contents)
 {% endif %}
