@@ -58,7 +58,7 @@ def __main__(ctx, debug):
 )
 def init(ctx, roles_path, force):
     """Initialise new docs/ paths."""
-    ansible_readme = AnsibleReadme(roles_path, should_force=force)
+    ansible_readme = AnsibleReadme(roles_path, should_force=force, context=ctx)
     ansible_readme.init_docs()
 
 
@@ -77,11 +77,7 @@ def init(ctx, roles_path, force):
     '--template',
     help='Jinja2 template for the README file.',
     default=(
-        str(
-            pathlib.Path(__file__).parent.absolute()
-            / 'data'
-            / 'readme.md.j2'
-        )
+        str(pathlib.Path(__file__).parent.absolute() / 'data' / 'readme.md.j2')
     ),
     type=click.Path(exists=True),
     show_default=True,
@@ -102,6 +98,7 @@ def generate(ctx, roles_path, force, template, name):
         template=template,
         readme_name=name,
         debug=ctx.obj['debug'],
+        context=ctx,
     )
 
     ansible_readme.generate_readmes()

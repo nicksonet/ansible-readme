@@ -1,3 +1,12 @@
+Ansible_Readme 1.0.4 (2019-10-30)
+=================================
+
+Bug Fixes
+---------
+
+- Fix for overwriting docs/main.yml when ``generate --force`` is passed. (#5)
+
+
 Ansible_Readme 1.0.3 (2019-10-30)
 =================================
 

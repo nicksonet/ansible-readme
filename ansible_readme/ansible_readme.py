@@ -71,6 +71,9 @@ class AnsibleReadme:
     # Whether or not to output debugging information
     debug: bool = attr.ib(default=False)
 
+    # Click based command line context
+    context: typing.Any = attr.ib(default=None)
+
     def __attrs_post_init__(self):
         """Initalise state after validation has run through."""
         self.path = pathlib.Path(self.path).absolute()
@@ -265,8 +268,23 @@ class AnsibleReadme:
             docs: typing.Dict[str, typing.Any] = {'defaults': {}}
             docs_path = role_path / 'docs'
 
-            if os.path.exists(docs_path) and not self.should_force:
-                log.info(f'{docs_path} already exists, skipping')
+            is_init_without_force = (
+                self.context.command.name == 'init'
+                and os.path.exists(docs_path)
+                and not self.should_force
+            )
+
+            another_cmd = (
+                self.context.command.name != 'init'
+                and os.path.exists(docs_path)
+            )
+
+            if is_init_without_force or another_cmd:
+                log.info(
+                    f'{docs_path} already exists, skipping '
+                    '(use init command with --force to override)'
+                )
+                continue
 
             if not os.path.exists(docs_path):
                 os.mkdir(docs_path)
