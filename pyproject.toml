@@ -15,8 +15,8 @@ include = '\.pyi?$'
 [tool.towncrier]
 directory = "changelog/"
 filename = "CHANGELOG.rst"
-package = "ansible-readme"
-package_dir = "ansible_readme"
+package = "ansible_readme"
+package_dir = "ansible-readme"
 
   [[tool.towncrier.type]]
   directory = "removal"
