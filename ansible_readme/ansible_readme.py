@@ -209,8 +209,10 @@ class AnsibleReadme:
 
     def render_readmes(self) -> typing.Dict[str, str]:
         """Render README file templates using Jinja2 with gathered docs."""
+        template_path = str(pathlib.Path(self.template).parent.absolute())
+
         jinja_env = Environment(
-            loader=FileSystemLoader(str(self.template.parent.absolute())),
+            loader=FileSystemLoader(template_path),
             trim_blocks=True,
             lstrip_blocks=True,
         )

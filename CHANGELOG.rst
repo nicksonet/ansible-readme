@@ -1,3 +1,12 @@
+Ansible_Readme 1.0.3 (2019-10-30)
+=================================
+
+Bug Fixes
+---------
+
+- Fix Path / Str wrangling once again for Click compatibility. (#4)
+
+
 Ansible_Readme 1.0.2 (2019-10-30)
 =================================
 
