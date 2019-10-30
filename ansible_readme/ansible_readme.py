@@ -14,7 +14,7 @@ import click
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
-from ansible_readme import filters
+from ansible_readme.filters import listify, quicklistify
 from ansible_readme.logger import get_logger, red_text
 
 log = get_logger(__name__)
@@ -215,8 +215,8 @@ class AnsibleReadme:
             lstrip_blocks=True,
         )
 
-        jinja_env.filters['listify'] = filters.listify
-        jinja_env.filters['quicklistify'] = filters.quicklistify
+        jinja_env.filters['listify'] = listify
+        jinja_env.filters['quicklistify'] = quicklistify
 
         template = jinja_env.get_template(os.path.basename(self.template))
 
