@@ -26,3 +26,11 @@ Contributing
 
    Contribution Guide <contribute>
    Module Reference <reference>
+
+Roadmaps
+========
+
+.. toctree::
+   :maxdepth: 1
+
+   Changelog <changelog>
