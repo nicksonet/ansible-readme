@@ -43,16 +43,19 @@ document them). In short, this is an experiment and your participation is
 required.
 
 The core principle is this: we need to generate the documentation based on the
-role directory structure. This arises out of applying the `Do One Thing and Do
-It Well`_ philosophy to developing roles. And as we have seen in practice, the
+role directory structure. This arises out of applying the `"Do One Thing and Do
+It Well"`_ philosophy to developing roles. And as we have seen in practice, the
 maintenance burden increases dramatically with this approach as the number of
 roles increases. Whatever hand written documentation there is can quickly get
 out of sync or sometimes be abandoned altogether.
 
+Please join the discussion on `the issue tracker`_.
+
 .. _Ansible Molecule: https://molecule.readthedocs.io/en/stable/
-.. _Do One Thing and Do It Well: https://en.wikipedia.org/wiki/Unix_philosophy#Do_One_Thing_and_Do_It_Well
+.. _"Do One Thing and Do It Well": https://en.wikipedia.org/wiki/Unix_philosophy#Do_One_Thing_and_Do_It_Well
 .. _The time is still ripe: https://github.com/ansible/proposals/issues/19
 .. _tonk: https://github.com/tonk
+.. _the issue tracker: https://github.com/pycontribs/ansible-readme/issues
 
 .. _documentation:
 
