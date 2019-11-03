@@ -1,6 +1,17 @@
 .. include:: ../../README.rst
   :end-before: _documentation
 
+.. warning::
+
+    Ansible-Readme in current form is meant primarily as an unstable
+    proof-of-concept tool. The project does follow `Semantic versioning`_
+    conventions but there are no guarantees that certain approaches will
+    continue to be supported on major releases. Therefore it is advised to not
+    invest in using the tool to document your roles **just yet** until it is
+    clear what approaches are worth following.
+
+.. _Semantic versioning: https://semver.org/
+
 Installation & Upgrading
 ========================
 
