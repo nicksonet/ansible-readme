@@ -49,7 +49,7 @@ maintenance burden increases dramatically with this approach as the number of
 roles increases. Whatever hand written documentation there is can quickly get
 out of sync or sometimes be abandoned altogether.
 
-Please join the discussion on `the issue tracker`_.
+Please join the discussion on `the issue tracker`_ or on IRC at ``#ansible-readme`` on Freenode.
 
 .. _Ansible Molecule: https://molecule.readthedocs.io/en/stable/
 .. _"Do One Thing and Do It Well": https://en.wikipedia.org/wiki/Unix_philosophy#Do_One_Thing_and_Do_It_Well
