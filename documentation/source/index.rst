@@ -38,6 +38,7 @@ Approaches
 
    Approaches to documenting roles <approaches>
    Tooling for documenting roles <tooling>
+   Relevant discussions <discussions>
 
 Contributing
 ============
